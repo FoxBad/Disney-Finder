@@ -19,20 +19,37 @@
         </header>
     </section>
     <section class="content">
-        <FORM>
-            <SELECT onChange="document.location=this.options[this.selectedIndex].value">
-              <OPTION VALUE="#" SELECTED>     CHOISIR     </OPTION>
-              <OPTION VALUE="images/planbtm.png" target="_BLANK">Big Thunder Mountains</OPTION>
-              <OPTION VALUE="images/planindiana.png" target="_BLANK">Indiana Jones</OPTION>
-              <OPTION VALUE="images/planpirate.png" target="_BLANK">Pirate des caraïbes</OPTION>
-              <OPTION VALUE="images/planISW.png" target="_BLANK">Its a small world</OPTION>
-              <OPTION VALUE="images/planbuzz.png" target="_BLANK">Buzz Lightear Lazer Blast</OPTION>
-              <OPTION VALUE="images/planspace.png" target="_BLANK">Space Mountain</OPTION>
-              <OPTION VALUE="images/planpeter.png" target="_BLANK">Peter Pan</OPTION>
-              <OPTION VALUE="images/planphantom.png" target="_BLANK">Phantom Manor</OPTION>
-              <OPTION VALUE="index.html">Retour</OPTION>
-            </SELECT>
-        </FORM>
+        <section class="btn-choose">
+            <div class="choose" id="choose-rides">
+                <FORM>
+                    <SELECT onChange="window.open(this.value)" class="select" >
+                    <OPTION VALUE="#" SELECTED>Choose your target ride</OPTION>
+                    <OPTION VALUE="images/planbtm.png" >Big Thunder Mountains</OPTION>
+                    <OPTION VALUE="images/planindiana.png" >Indiana Jones</OPTION>
+                    <OPTION VALUE="images/planpirate.png" >Pirate des caraïbes</OPTION>
+                    <OPTION VALUE="images/planISW.png" >Its a small world</OPTION>
+                    <OPTION VALUE="images/planbuzz.png" >Buzz Lightear Lazer Blast</OPTION>
+                    <OPTION VALUE="images/planspace.png" >Space Mountain</OPTION>
+                    <OPTION VALUE="images/planpeter.png" >Peter Pan</OPTION>
+                    <OPTION VALUE="images/planphantom.png" >Phantom Manor</OPTION>
+                    </SELECT>
+                </FORM>
+            </div>
+            <div class="choose" id="choose-foods">
+            
+                <SELECT onChange="window.open(this.value)" class="select">
+                <OPTION VALUE="#" SELECTED>Choose your target restaurant</OPTION>
+                </SELECT>
+            
+            </div>
+            <div class="choose" id="choose-shops">
+                <FORM>
+                    <SELECT onChange="window.open(this.value)" class="select">
+                    <OPTION VALUE="#" SELECTED>Choose your target shop</OPTION>
+                    </SELECT>
+                </FORM>
+            </div>
+        </section>
         <iframe src="https://player.radioking.io/radio-of-magic-stream/?c=%231e7fcb&c2=%23ffffff&f=h&i=0&p=1&s=1&li=1&popup=1&plc=0&h=145&l=470&v=2" style="border-radius: 5px; width: 470px; height: 145px; " frameBorder="0" ></iframe><script type="text/javascript" src="https://player.radioking.io/scripts/iframe.bundle.js"></script>
     </section>
     <section class="bottom">

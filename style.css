@@ -33,6 +33,19 @@ body{
     padding-bottom: 50px;
 }
 
+.btn-choose{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.choose{
+    margin: 20px;
+}
+
+
+
 .content{
     display: flex;
     text-align: center;
