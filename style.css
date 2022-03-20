@@ -11,7 +11,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .main-title{
@@ -30,13 +30,74 @@ body{
 
 .top{
     color: white;
-    padding-bottom: 50px;
 }
 
-.btn-choose{
-    margin-bottom: 50px;
+
+/* Style The Dropdown Button */
+.btndropdown {
+    background-color: white;
+    color: black;
+    padding-left: 60px ;
+    padding-right: 60px ;
+    padding-top: 15px ;
+    padding-bottom: 15px ;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {
+    background-color: #cecece;
+    border-radius: 10px;
+    background-image: url(images/1.png);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    margin-top: 15px;
+    display: block;
+    
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .btndropdown {
+    background-image: url(images/1.png);
+}
+
+
+.content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -44,16 +105,26 @@ body{
     margin: 20px;
 }
 
-
-
-.content{
+.btn-choose{
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    font-family: 'Bebas Neue', cursive;
     
 }
 
 .img30{
-    width: 60%;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.radiomagic{
+    margin-top: 30px;
+}
+
+.bottom{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    color: white;
 }

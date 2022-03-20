@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Disney Finder</title>
 </head>
@@ -15,46 +16,58 @@
                     Disney Finder
                 </h1>
             </div>
-            <img src="images/30.jpg" alt="" class="img30">
         </header>
     </section>
     <section class="content">
         <section class="btn-choose">
             <div class="choose" id="choose-rides">
-                <FORM>
-                    <SELECT onChange="window.open(this.value)" class="select" >
-                    <OPTION VALUE="#" SELECTED>Choose your target ride</OPTION>
-                    <OPTION VALUE="images/planbtm.png" >Big Thunder Mountains</OPTION>
-                    <OPTION VALUE="images/planindiana.png" >Indiana Jones</OPTION>
-                    <OPTION VALUE="images/planpirate.png" >Pirate des caraïbes</OPTION>
-                    <OPTION VALUE="images/planISW.png" >Its a small world</OPTION>
-                    <OPTION VALUE="images/planbuzz.png" >Buzz Lightear Lazer Blast</OPTION>
-                    <OPTION VALUE="images/planspace.png" >Space Mountain</OPTION>
-                    <OPTION VALUE="images/planpeter.png" >Peter Pan</OPTION>
-                    <OPTION VALUE="images/planphantom.png" >Phantom Manor</OPTION>
-                    </SELECT>
-                </FORM>
+                <div class="dropdown">
+                    <a class="btndropdown" href="#">
+                        Rides
+                    </a>
+                
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </div>
             <div class="choose" id="choose-foods">
-            
-                <SELECT onChange="window.open(this.value)" class="select">
-                <OPTION VALUE="#" SELECTED>Choose your target restaurant</OPTION>
-                </SELECT>
-            
+                <div class="dropdown">
+                    <a class="btndropdown" href="#">
+                        Restaurant
+                    </a>
+                
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </div>
             <div class="choose" id="choose-shops">
-                <FORM>
-                    <SELECT onChange="window.open(this.value)" class="select">
-                    <OPTION VALUE="#" SELECTED>Choose your target shop</OPTION>
-                    </SELECT>
-                </FORM>
+                <div class="dropdown">
+                    <a class="btndropdown" href="#">
+                        Shops
+                    </a>
+                
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </div>
         </section>
-        <iframe src="https://player.radioking.io/radio-of-magic-stream/?c=%231e7fcb&c2=%23ffffff&f=h&i=0&p=1&s=1&li=1&popup=1&plc=0&h=145&l=470&v=2" style="border-radius: 5px; width: 470px; height: 145px; " frameBorder="0" ></iframe><script type="text/javascript" src="https://player.radioking.io/scripts/iframe.bundle.js"></script>
+        <img src="images/30.jpg" alt="" class="img30">
+        <iframe class="radiomagic" src="https://player.radioking.io/radio-of-magic-stream/?c=%231e7fcb&c2=%23ffffff&f=h&i=0&p=1&s=1&li=1&popup=1&plc=0&h=145&l=470&v=2" style="border-radius: 5px; width: 470px; height: 145px; " frameBorder="0" ></iframe><script type="text/javascript" src="https://player.radioking.io/scripts/iframe.bundle.js"></script>
     </section>
     <section class="bottom">
         <footer>
-
+            <p>
+                Copyright © FoxPVP - 2022 - All Right Reserved
+            </p>
         </footer>
     </section>
 </body>
