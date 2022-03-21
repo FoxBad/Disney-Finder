@@ -56,7 +56,11 @@ body{
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-menu {
-    display: none;
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    z-index: -1;
     position: absolute;
     background-color: white;
     border-radius: 10px;
@@ -83,8 +87,12 @@ body{
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
-    transform: translateY(14px);
     display: block;
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(14px);
+    transition-delay: 0s, 0s, 0.3s;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -113,6 +121,7 @@ body{
 .img30{
     width: 50%;
     margin-top: 30px;
+    z-index: -2;
 }
 
 .radiomagic{
