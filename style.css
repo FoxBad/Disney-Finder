@@ -46,13 +46,12 @@ body{
     cursor: pointer;
     text-decoration: none;
     border-radius: 10px;
-  }
+}
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -63,8 +62,8 @@ body{
     border-radius: 10px;
     font-size: 30px;
     text-align: center;
-
-
+    left: 0px;
+    right: 0px;
 }
 
 /* Links inside the dropdown */
@@ -84,9 +83,8 @@ body{
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
-    margin-top: 15px;
+    transform: translateY(14px);
     display: block;
-    
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
