@@ -1,6 +1,7 @@
 body{
     background-color: black;
-    margin: 0 auto;
+    margin: 0 auto;    
+    font-family: 'Bebas Neue', cursive;
 }
 
 .title{
@@ -23,7 +24,6 @@ body{
 .headd{
     display: flex;
     flex-direction: column;
-    font-family: 'Bebas Neue', cursive;
     align-items: center;
 
 }
@@ -33,235 +33,268 @@ body{
 }
 
 
-/* Style The Dropdown Button */
-.btndropdown {
+.btn-choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  
+  .dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 23%;
     background-color: white;
-    color: black;
-    padding-left: 60px ;
-    padding-right: 60px ;
-    padding-top: 15px ;
-    padding-bottom: 15px ;
-    font-size: 30px;
-    cursor: pointer;
-    text-decoration: none;
     border-radius: 10px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+    margin-left :10px ;
+    margin-right :10px ;
+    margin-top :20px ;
+    margin-bottom :20px ;
+  
+  }
+  
+  @media (max-width: 1000px) {
+    .btn-choose {
+      flex-direction: column;
+    }
+  
+    .dropdown{
+      width: 32%;
+  
+    }
+  
+  }
+  
+  .dropdown li {
     position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-menu {
-    visibility: hidden; /* hides sub-menu */
-    opacity: 0;
-    transform: translateY(-30px);
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    z-index: -1;
-    position: relative;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 25px;
-    text-align: center;
-    left: 0px;
-    right: 0px;
-}
-
-/* Links inside the dropdown */
-.dropdown-menu a {
+  }
+  
+  .dropdown li a {
     color: black;
-    padding: 12px 16px;
+    text-align: center;
     text-decoration: none;
+    padding: 10px;
     display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-menu a:hover {
-    background-color: #cecece;
-    border-radius: 10px;
-    background-image: url(images/1.png);
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
-
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(14px);
-    transition-delay: 0s, 0s, 0.3s;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .btndropdown {
-    background-image: url(images/1.png);
-}
-
-
-/* Show the dropdown menu on hover */
-.dropdown-menu:hover #adv {
-
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translate(288.85px, -53.6px);
-    transition-delay: 0s, 0s, 0.3s;
-}
-/* Show the dropdown menu on hover */
-.dropdown-menu:hover #disco {
-
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translate(288.85px, -53.6px);
-    transition-delay: 0s, 0s, 0.3s;
-}
-/* Show the dropdown menu on hover */
-.dropdown-menu:hover #fanta {
-
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translate(288.85px, -53.6px);
-    transition-delay: 0s, 0s, 0.3s;
-}
-/* Show the dropdown menu on hover */
-.dropdown-menu:hover #front {
-
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translate(288.85px, -53.6px);
-    transition-delay: 0s, 0s, 0.3s;
-}
-/* Show the dropdown menu on hover */
-.dropdown-menu:hover #walt {
-
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translate(288.85, -53.6px);
-    transition-delay: 0s, 0s, 0.3s;
-}
-
-
-
-/* Dropdown Content 2 (Hidden by Default) */
-#adv {
+  
+  }
+  
+  .sub-menu { 
     visibility: hidden; /* hides sub-menu */
     opacity: 0;
-    transform: translate(260px, -53.6px);
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    z-index: -1;
     position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: translateY(-25px);
+    list-style: none;
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     background-color: white;
-    border-radius: 10px;
-    font-size: 25px;
-    text-align: center;
-}
+    border-radius: 10px; 
+  
+  }
+  
+  
+  .sub-menu-parent:hover .sub-menu {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  
 
-/* Dropdown Content 2 (Hidden by Default) */
-#disco {
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .sub-menu-child { 
     visibility: hidden; /* hides sub-menu */
     opacity: 0;
-    transform: translate(260px, -53.6px);
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    z-index: -1;
     position: absolute;
+    border-radius: 10px; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+    transform: translateX(-25px);
+    list-style: none;
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     background-color: white;
-    border-radius: 10px;
-    font-size: 25px;
-    text-align: center;
-}
+    width: 100%;
+    left: 100%;
+    top: 0;
+  }
 
-/* Dropdown Content 2 (Hidden by Default) */
-#fanta {
+  
+  .adv:hover #adv {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .disco:hover #disco {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .fanta:hover #fanta {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .front:hover #front {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .walt:hover #walt {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  .sub-menu-child2 { 
     visibility: hidden; /* hides sub-menu */
     opacity: 0;
-    transform: translate(260px, -53.6px);
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    z-index: -1;
     position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 25px;
-    text-align: center;
-}
-
-/* Dropdown Content 2 (Hidden by Default) */
-#front {
-    visibility: hidden; /* hides sub-menu */
-    opacity: 0;
-    transform: translate(260px, -53.6px);
+    border-radius: 10px; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+    transform: translateX(-674px);
+    list-style: none;
+    z-index: 1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    z-index: -1;
-    position: absolute;
     background-color: white;
-    border-radius: 10px;
-    font-size: 25px;
-    text-align: center;
-}
+    width: 100%;
+    left: 100%;
+    top: 0;
+  }
 
-/* Dropdown Content 2 (Hidden by Default) */
-#walt {
-    visibility: hidden; /* hides sub-menu */
-    opacity: 0;
-    transform: translate(260px, -53.6px);
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    z-index: -1;
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 25px;
-    text-align: center;
-}
 
-/* Links inside the dropdown */
-.dropdown-menu2 a {
+  .adv32:hover #adv {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(-699px);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .disco2:hover #disco {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(-699px);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .fanta2:hover #fanta {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(-699px);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .front2:hover #front {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(-699px);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  .walt2:hover #walt {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(-699px);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .dropdown li ul li a {
+    font-size: 160%;
+    display: block;
+    text-align: center;
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-menu2 a:hover {
-    background-color: #cecece;
-    border-radius: 10px;
+  }
+  
+  .sub-menu-parent a{
+    font-size : 180%;
+  }
+  
+  ul li:hover>a {
     background-image: url(images/1.png);
-}
+    border-radius: 10px; 
+  }
+  
+  ul li:hover>ul {
+    display: block;
+    z-index: 1;
+    transform: translateY(0px);
+    transition-delay: 0s, 0s, 0.3s;
+  }
 
 
 
-
-
-
-
-
-
-.content{
+.content-box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.choose{
-    margin: 20px;
-}
-
-.btn-choose{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Bebas Neue', cursive;
-    
-}
 
 .img30{
     width: 50%;
     z-index: -2;
+    margin-top: 20px;
 
 }
 
