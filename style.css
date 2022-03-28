@@ -199,13 +199,13 @@ body{
     padding: 0;
     width: 100%;
     color: white;
-    transform: translateX(-674px);
+    transform: translateX(25px);
     list-style: none;
     z-index: 1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     background-color: white;
     width: 100%;
-    left: 100%;
+    right: 100%;
     top: 0;
   }
 
@@ -214,35 +214,35 @@ body{
     visibility: visible; /* shows sub-menu */
     opacity: 1;
     z-index: 1;
-    transform: translateX(-699px);
+    transform: translateX(0%);
     transition-delay: 0s, 0s, 0.3s;
   }
   .disco2:hover #disco {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
     z-index: 1;
-    transform: translateX(-699px);
+    transform: translateX(0%);
     transition-delay: 0s, 0s, 0.3s;
   }
   .fanta2:hover #fanta {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
     z-index: 1;
-    transform: translateX(-699px);
+    transform: translateX(0%);
     transition-delay: 0s, 0s, 0.3s;
   }
   .front2:hover #front {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
     z-index: 1;
-    transform: translateX(-699px);
+    transform: translateX(0%);
     transition-delay: 0s, 0s, 0.3s;
   }
   .walt2:hover #walt {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
     z-index: 1;
-    transform: translateX(-699px);
+    transform: translateX(0%);
     transition-delay: 0s, 0s, 0.3s;
   }
 
