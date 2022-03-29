@@ -274,7 +274,7 @@ body{
 
 
 .img30{
-    width: 50%;
+    width: 70%;
     z-index: -2;
     margin-top: 20px;
 
@@ -306,13 +306,19 @@ body{
 
 @media (max-width: 760px) {
   .dropdown {
-    width: 55%;
+    width: 60%;
   }
 
   .sub-menu-child{
-    width: 40%;
+    width: 30%;
   }
   .sub-menu-child2{
-    width: 40%;
+    width: 30%;
+  }
+  .dropdown li ul li a {
+    font-size: 90%;
+  }
+  .sub-menu-parent a{
+    font-size : 120%;
   }
 }
