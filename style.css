@@ -152,6 +152,13 @@ body{
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
   }
+  .mains:hover #mains {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
   .walt:hover #walt {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
@@ -220,6 +227,14 @@ body{
     transform: translateX(0%);
     transition-delay: 0s, 0s, 0.3s;
   }
+  .mains2:hover #mains {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateX(0%);
+    transition-delay: 0s, 0s, 0.3s;
+  }
+  
   .walt2:hover #walt {
     visibility: visible; /* shows sub-menu */
     opacity: 1;
