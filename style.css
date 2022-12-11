@@ -10,23 +10,41 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.main-title{
-    font-size: 50px;
-    width: 250px;
-    text-align: center;
-}
-
-.headd{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
     align-items: center;
 
 }
+
+.main-title{
+  font-size: 400%;
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#log2{
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+#log2:hover{
+  opacity: 1;
+}
+
+.dflogo{
+  width: 40%;
+  grid-area: 1 / 1 / 2 / 2;
+  border-radius:50%;
+  margin:35px 0px 35px 35px;
+  border: 5px solid;
+  border-color: black;
+}
+
+
 
 .top{
     color: white;
@@ -291,12 +309,15 @@ body{
 .img30{
     width: 70%;
     z-index: -2;
-    margin-top: 20px;
-
 }
 
 .radiomagic{
     margin-top: 30px;
+}
+
+.imgland{
+  width: 10%;
+  margin-right: 20px;
 }
 
 .bottom{
@@ -313,15 +334,15 @@ body{
   }
 
   .dropdown{
-    width: 32%;
+    width: 33%;
 
   }
 
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .dropdown {
-    width: 60%;
+    width: 62%;
   }
 
   .sub-menu-child{
@@ -335,5 +356,8 @@ body{
   }
   .sub-menu-parent a{
     font-size : 120%;
+  }
+  .main-title{
+    font-size: 250%;
   }
 }
