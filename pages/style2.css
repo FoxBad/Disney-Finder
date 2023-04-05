@@ -1,0 +1,40 @@
+body {
+    background-image: url("../plan.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: contain;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.sm{
+    position: absolute;
+    top: 48%;
+    left: 68%;
+}
+
+.pm{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+
+
+#ic {
+    background-color: blue;
+    padding: 100%;
+    border:3px solid black;
+    border-radius: 50%;
+    transition: transform .2s;
+}
+
+#ic:hover {
+    transform: scale(1.5);
+    transition: transform .2s;
+}
+
+
+
+
